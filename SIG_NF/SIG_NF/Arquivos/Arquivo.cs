@@ -34,5 +34,28 @@ namespace SIG_NF.Arquivos
 
             }
         }
+
+        public void SalvarVendedor(List<Vendedor> listaVendedor)
+        {
+            string json = JsonConvert.SerializeObject(listaVendedor.ToArray());
+
+            File.WriteAllText(@".\listaVendedor.txt", json);
+        }
+
+        public void LerVendedor()
+        {
+            DaoNotaFiscal daoNotaFiscal = new DaoNotaFiscal();
+            string jsonFilePath = @".\listaVendedor.txt";
+
+            if (File.Exists(jsonFilePath))
+            {
+                string json = File.ReadAllText(jsonFilePath);
+
+                Vendedor[] listaVendedor = JsonConvert.DeserializeObject<Vendedor[]>(json);
+
+                daoNotaFiscal.AddVendedorLer(listaVendedor.ToList());
+
+            }
+        }
     }
 }

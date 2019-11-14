@@ -52,6 +52,7 @@
     <Compile Include="Arquivos\Arquivo.cs" />
     <Compile Include="Controller\NotaFiscalController.cs" />
     <Compile Include="DAO\DaoNotaFiscal.cs" />
+    <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\Vendedor.cs" />
     <Compile Include="Model\NotaFiscal.cs" />
     <Compile Include="View\CadastroNotaFiscal.cs">

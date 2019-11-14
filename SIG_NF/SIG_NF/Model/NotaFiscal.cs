@@ -13,10 +13,12 @@ namespace SIG_NF.Model
         public string NomeCliente { get; set; }
         public int NumNF { get; set; }        
         public string Regiao { get; set; }
-        public string NomeProduto { get; set; }
-        public int QtdProduto { get; set; }
-        public double ValorUnitario { get; set; }
-        public double ValorTotal { get; set; }
+       
+        public string VendedorCPF { get; set; }
+
+        public List<Produto> listaProdutos { get; set; }
+
+        public double TotalNota { get; set; }
 
     }
 }

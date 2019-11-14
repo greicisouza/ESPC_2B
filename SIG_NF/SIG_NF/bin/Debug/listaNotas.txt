@@ -1,0 +1,1 @@
+[{"NomeCliente":"Teste","NumNF":123459,"Regiao":"Norte","VendedorCPF":"122.782.949-38","listaProdutos":[{"Nome":"Testei","PrecoUnitario":322.0,"Quant":23,"Total":7406.0}],"TotalNota":7406.0}]

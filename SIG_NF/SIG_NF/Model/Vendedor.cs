@@ -10,10 +10,10 @@ namespace SIG_NF.Model
     {
         public string NomeVendedor { get; set; }
         public double Rg { get; set; }
-        public double Cpf { get; set; }        
-        public string NomeRua { get; set; }
-        public int NumCasa { get; set; }
-        public double Cep { get; set; }
+        public string Cpf { get; set; }        
+        public string Rua { get; set; }
+        public int Numero { get; set; }
+        public string Cep { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }

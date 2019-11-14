@@ -29,32 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListarNotaFiscal));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabela = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.tabela)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // tabela
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 162);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(982, 340);
-            this.dataGridView1.TabIndex = 0;
+            this.tabela.AllowUserToOrderColumns = true;
+            this.tabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabela.Location = new System.Drawing.Point(31, 162);
+            this.tabela.Name = "tabela";
+            this.tabela.Size = new System.Drawing.Size(982, 340);
+            this.tabela.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(31, 552);
+            this.button1.Location = new System.Drawing.Point(31, 540);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 45);
             this.button1.TabIndex = 41;
-            this.button1.Text = "Voltar";
+            this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label6
@@ -62,7 +63,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(433, 53);
+            this.label6.Location = new System.Drawing.Point(433, 41);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(215, 28);
             this.label6.TabIndex = 42;
@@ -71,27 +72,41 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(188, 119);
+            this.label1.Location = new System.Drawing.Point(187, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(623, 13);
             this.label1.TabIndex = 43;
             this.label1.Text = "Deve conter Num NF ordenado asc; Valor total de vendas por Vendedor; Valor total " +
     "compras por cliente; Qual região maior vendas";
             // 
-            // ListarNF
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCadastrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.Location = new System.Drawing.Point(853, 87);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(160, 45);
+            this.btnCadastrar.TabIndex = 44;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // ListarNotaFiscal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1052, 618);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tabela);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ListarNF";
+            this.Name = "ListarNotaFiscal";
             this.Text = "Sistema Gerenciador de Notas Fiscais";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabela)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,9 +114,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView tabela;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }

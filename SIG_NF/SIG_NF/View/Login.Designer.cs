@@ -35,8 +35,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox_Senha = new System.Windows.Forms.TextBox();
-            this.textBox_Email = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -95,8 +95,8 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Window;
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox_Senha);
-            this.panel2.Controls.Add(this.textBox_Email);
+            this.panel2.Controls.Add(this.txtSenha);
+            this.panel2.Controls.Add(this.txtEmail);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.linkLabel1);
@@ -118,24 +118,24 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Login";
             // 
-            // textBox_Senha
+            // txtSenha
             // 
-            this.textBox_Senha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Senha.Location = new System.Drawing.Point(104, 306);
-            this.textBox_Senha.Name = "textBox_Senha";
-            this.textBox_Senha.PasswordChar = '*';
-            this.textBox_Senha.Size = new System.Drawing.Size(226, 27);
-            this.textBox_Senha.TabIndex = 11;
-            this.textBox_Senha.UseSystemPasswordChar = true;
+            this.txtSenha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(104, 306);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(226, 27);
+            this.txtSenha.TabIndex = 11;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
-            // textBox_Email
+            // txtEmail
             // 
-            this.textBox_Email.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Email.ForeColor = System.Drawing.Color.Blue;
-            this.textBox_Email.Location = new System.Drawing.Point(104, 210);
-            this.textBox_Email.Name = "textBox_Email";
-            this.textBox_Email.Size = new System.Drawing.Size(226, 27);
-            this.textBox_Email.TabIndex = 10;
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.Blue;
+            this.txtEmail.Location = new System.Drawing.Point(104, 210);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(226, 27);
+            this.txtEmail.TabIndex = 10;
             // 
             // label2
             // 
@@ -169,6 +169,7 @@
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Cadastre-se";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // btn_Entrar
             // 
@@ -181,6 +182,7 @@
             this.btn_Entrar.TabIndex = 6;
             this.btn_Entrar.Text = "Entrar";
             this.btn_Entrar.UseVisualStyleBackColor = false;
+            this.btn_Entrar.Click += new System.EventHandler(this.btn_Entrar_Click);
             // 
             // FormInicial
             // 
@@ -206,8 +208,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox_Senha;
-        private System.Windows.Forms.TextBox textBox_Email;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
