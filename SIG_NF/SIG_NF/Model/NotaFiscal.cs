@@ -20,5 +20,6 @@ namespace SIG_NF.Model
 
         public double TotalNota { get; set; }
 
+
     }
 }

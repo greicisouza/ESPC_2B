@@ -21,24 +21,27 @@ namespace SIG_NF.View
             InitializeComponent();
             Preencher();
         }
-
+        //Deve conter Num NF ordenado asc; Valor total de vendas por Vendedor; Valor total compras por cliente; Qual região maior vendas
+        //Continuar daqui
         public void Preencher()
         {
             List<NotaFiscal> lstUsr = controle.listarNota();
             var novaListUsuario = lstUsr.Select(usuario => new
             {
-                Numero = usuario.NumNF,
+                Numero = usuario.NumNF,                
                 Vendedor = controle.procurarVendedorCpf(usuario.VendedorCPF),
                 Região = usuario.Regiao,
                 Total = usuario.TotalNota
             }).ToList();
 
+            lstUsr.OrderBy(x => x.NumNF).ToList();
+
             tabela.DataSource = novaListUsuario;
             tabela.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             tabela.ColumnHeadersDefaultCellStyle.ForeColor = Color.Red;
-            tabela.CellClick += tabela_CellClick;
+            tabela.CellClick += tabela_CellClick;            
         }
-
+        
         private void tabela_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             throw new NotImplementedException();
@@ -46,9 +49,19 @@ namespace SIG_NF.View
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            CadastroNotaFiscal cadastroVendedor = new CadastroNotaFiscal();
+            
+            CadastroNotaFiscal cadastroNF = new CadastroNotaFiscal();
             Hide();
-            cadastroVendedor.Show();
+            cadastroNF.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja encerrar a aplicação?", "Atenção!", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
         }
     }
 }

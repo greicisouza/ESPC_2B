@@ -40,7 +40,10 @@ namespace SIG_NF.View
 
             controle.cadastrarVendedor(vendedor);
 
-            MessageBox.Show("Cadastro Efetuado! Realize o login..","Cadastro Efetuado",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Cadastro efetuado com sucesso!","Atenção!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            FormInicial login = new FormInicial();
+            Hide();
+            login.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,7 +51,6 @@ namespace SIG_NF.View
             FormInicial login = new FormInicial();
             Hide();
             login.Show();
-
         }
     }
 }

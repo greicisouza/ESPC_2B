@@ -115,7 +115,7 @@
             this.txtNF.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNF.Location = new System.Drawing.Point(639, 147);
             this.txtNF.Maximum = new decimal(new int[] {
-            99999999,
+            1999999999,
             0,
             0,
             0});
@@ -223,9 +223,9 @@
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(43, 322);
+            this.richTextBox1.Location = new System.Drawing.Point(43, 301);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(756, 191);
+            this.richTextBox1.Size = new System.Drawing.Size(756, 212);
             this.richTextBox1.TabIndex = 39;
             this.richTextBox1.Text = "";
             // 
