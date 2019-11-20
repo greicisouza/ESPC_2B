@@ -402,6 +402,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroVendedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Gerenciador de Notas Fiscais";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

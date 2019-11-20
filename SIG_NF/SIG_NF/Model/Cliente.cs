@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace SIG_NF.Model
 {
-    class Produto
+    class Cliente
     {
-        public int Numero { get; set; }
         public string Nome { get; set; }
-        public double PrecoUnitario { get; set; }
-        public int Quant { get; set; }
+
         public double Total { get; set; }
     }
 }

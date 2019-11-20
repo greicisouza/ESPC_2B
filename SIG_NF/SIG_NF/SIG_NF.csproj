@@ -52,7 +52,9 @@
     <Compile Include="Arquivos\Arquivo.cs" />
     <Compile Include="Controller\NotaFiscalController.cs" />
     <Compile Include="DAO\DaoNotaFiscal.cs" />
+    <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Produto.cs" />
+    <Compile Include="Model\Regiao.cs" />
     <Compile Include="Model\Vendedor.cs" />
     <Compile Include="Model\NotaFiscal.cs" />
     <Compile Include="View\CadastroNotaFiscal.cs">
@@ -66,6 +68,12 @@
     </Compile>
     <Compile Include="View\CadastroVendedor.Designer.cs">
       <DependentUpon>CadastroVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListarPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ListarPesquisa.Designer.cs">
+      <DependentUpon>ListarPesquisa.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
@@ -81,11 +89,20 @@
     <Compile Include="View\ListarNotaFiscal.Designer.cs">
       <DependentUpon>ListarNotaFiscal.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\VisualizarNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VisualizarNota.Designer.cs">
+      <DependentUpon>VisualizarNota.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\CadastroNotaFiscal.resx">
       <DependentUpon>CadastroNotaFiscal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CadastroVendedor.resx">
       <DependentUpon>CadastroVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ListarPesquisa.resx">
+      <DependentUpon>ListarPesquisa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

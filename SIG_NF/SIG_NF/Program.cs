@@ -22,7 +22,8 @@ namespace SIG_NF
             Application.SetCompatibleTextRenderingDefault(false);
             arquivo.LerNotaFiscal();
             arquivo.LerVendedor();
-
+            arquivo.LerCliente();
+            arquivo.LerRegiao();
             Application.Run(new FormInicial());
         }
     }

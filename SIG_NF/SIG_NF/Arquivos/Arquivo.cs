@@ -57,5 +57,52 @@ namespace SIG_NF.Arquivos
 
             }
         }
+
+        public void SalvarCliente(List<Cliente> listaCliente)
+        {
+            string json = JsonConvert.SerializeObject(listaCliente.ToArray());
+
+            File.WriteAllText(@".\listaCliente.txt", json);
+        }
+
+        public void LerCliente()
+        {
+            DaoNotaFiscal daoNotaFiscal = new DaoNotaFiscal();
+            string jsonFilePath = @".\listaCliente.txt";
+
+            if (File.Exists(jsonFilePath))
+            {
+                string json = File.ReadAllText(jsonFilePath);
+
+                Cliente[] listaCliente = JsonConvert.DeserializeObject<Cliente[]>(json);
+
+                daoNotaFiscal.AddClienteLer(listaCliente.ToList());
+
+            }
+        }
+
+        public void SalvarRegiao(List<Regiao> listaRegiao)
+        {
+            string json = JsonConvert.SerializeObject(listaRegiao.ToArray());
+
+            File.WriteAllText(@".\listaRegiao.txt", json);
+        }
+
+        public void LerRegiao()
+        {
+            DaoNotaFiscal daoNotaFiscal = new DaoNotaFiscal();
+            string jsonFilePath = @".\listaRegiao.txt";
+
+            if (File.Exists(jsonFilePath))
+            {
+                string json = File.ReadAllText(jsonFilePath);
+
+                Regiao[] listaRegiao = JsonConvert.DeserializeObject<Regiao[]>(json);
+
+                daoNotaFiscal.AddRegiaoLer(listaRegiao.ToList());
+
+            }
+        }
+
     }
 }

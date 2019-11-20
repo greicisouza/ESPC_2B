@@ -19,13 +19,21 @@ namespace SIG_NF
         public FormInicial()
         {
             InitializeComponent();
+
+            btn_Entrar.FlatStyle = FlatStyle.Flat;
+            btn_Entrar.FlatAppearance.BorderColor = Color.DarkCyan;
+            btn_Entrar.FlatAppearance.BorderSize = 1;
+
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatAppearance.BorderColor = Color.DarkCyan;
+            button1.FlatAppearance.BorderSize = 1;
         }
 
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
             if (controle.procurarVendedor(txtEmail.Text, txtSenha.Text) == true)
             {              
-                CadastroNotaFiscal cadastroNotaFiscal = new CadastroNotaFiscal();
+                ListarNotaFiscal cadastroNotaFiscal = new ListarNotaFiscal();
                 Hide();
                 cadastroNotaFiscal.Show();
             } else

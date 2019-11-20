@@ -1,0 +1,1 @@
+[{"NomeRegiao":"Norte","Total":1680.0},{"NomeRegiao":"Nordeste","Total":2800.0}]

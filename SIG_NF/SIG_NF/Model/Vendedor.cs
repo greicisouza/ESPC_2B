@@ -20,5 +20,7 @@ namespace SIG_NF.Model
         public string Email { get; set; }
         public string Senha { get; set; } 
 
+        public double TotalVendas { get; set; }
+
     }
 }
