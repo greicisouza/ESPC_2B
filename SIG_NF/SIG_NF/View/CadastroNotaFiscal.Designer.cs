@@ -279,7 +279,7 @@
             this.tabela.Name = "tabela";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabela.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.tabela.Size = new System.Drawing.Size(756, 205);
+            this.tabela.Size = new System.Drawing.Size(757, 205);
             this.tabela.TabIndex = 43;
             // 
             // txtTotal

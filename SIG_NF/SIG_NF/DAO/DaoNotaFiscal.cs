@@ -134,6 +134,11 @@ namespace SIG_NF.DAO
             return listaVendedor.Find(x => x.NomeVendedor == nomeVendedor);
         }
 
+        public NotaFiscal procurarNota(int nota)
+        {
+            return listaNotaFiscal.Find(x => x.NumNF == nota);
+        }
+
         public Cliente procurarCliente(string nomeCliente)
         {
             return listaCliente.Find(x => x.Nome == nomeCliente);

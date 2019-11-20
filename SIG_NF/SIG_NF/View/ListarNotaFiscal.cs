@@ -87,7 +87,7 @@ namespace SIG_NF.View
         {
             if (e.ColumnIndex == tabela.Columns["Editar"].Index){
 
-                VisualizarNota visualizarNota = new VisualizarNota(Convert.ToInt32(tabela.CurrentRow.Cells[1].Value.ToString()));
+                CadastroNotaFiscal visualizarNota = new CadastroNotaFiscal(Convert.ToInt32(tabela.CurrentRow.Cells[1].Value.ToString()));
                 Hide();
                 visualizarNota.Show();
 
@@ -97,7 +97,7 @@ namespace SIG_NF.View
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             
-            CadastroNotaFiscal cadastroNF = new CadastroNotaFiscal();
+            CadastroNotaFiscal cadastroNF = new CadastroNotaFiscal(0);
             Hide();
             cadastroNF.Show();
         }

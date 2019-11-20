@@ -71,6 +71,10 @@ namespace SIG_NF.Controller
         {
             return daoNotaFiscal.procurarVendedorNome(nomeVendedor);
         }
+        public NotaFiscal procurarNota(int nota)
+        {
+            return daoNotaFiscal.procurarNota(nota);
+        }
 
         public string procurarVendedorCpf(string cpf)
         {

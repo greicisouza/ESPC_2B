@@ -20,6 +20,14 @@ namespace SIG_NF.View
         public CadastroVendedor()
         {
             InitializeComponent();
+
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatAppearance.BorderColor = Color.ForestGreen;
+            button1.FlatAppearance.BorderSize = 1;
+
+            btn_Entrar.FlatStyle = FlatStyle.Flat;
+            btn_Entrar.FlatAppearance.BorderColor = Color.ForestGreen;
+            btn_Entrar.FlatAppearance.BorderSize = 1;
         }
 
         private void btn_Entrar_Click(object sender, EventArgs e)

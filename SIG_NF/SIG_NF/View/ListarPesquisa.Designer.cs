@@ -42,7 +42,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(381, 42);
+            this.label6.Location = new System.Drawing.Point(380, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(368, 41);
             this.label6.TabIndex = 50;

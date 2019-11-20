@@ -18,13 +18,14 @@ namespace SIG_NF.View
         public int numNotaFiscal = 0;
         public int numero = 0;
         NotaFiscalController controle = new NotaFiscalController();
+        public int verificar = 0;
 
         private static List<Cliente> listaCliente = new List<Cliente>();
         private static List<Produto> listaProdutos = new List<Produto>();
 
         public double Total = 0;
         
-        public CadastroNotaFiscal()
+        public CadastroNotaFiscal(int item)
         {
             InitializeComponent();
 
@@ -45,6 +46,18 @@ namespace SIG_NF.View
             numNotaFiscal = numRandNotaFiscal.Next(1000000000, 1999999999);
             txtNF.Value = numNotaFiscal;
             txtNF.Enabled = false;
+
+            if(item != 0)
+            {
+                label10.Visible = false;
+                tabela.Height = 317;
+                tabela.Location = new System.Drawing.Point(43,155);
+                button2.Visible = false;
+                verificar = item;
+                var pesquisa = controle.procurarNota(item);
+                PreencherCampos(pesquisa);
+
+            }
         }
 
         public void Preencher()
@@ -55,7 +68,7 @@ namespace SIG_NF.View
                 txtVendedor.Items.Add(vendedor.NomeVendedor);
             }
         }        
-        private void btn_Entrar_Click(object sender, EventArgs e)
+        public void btn_Entrar_Click(object sender, EventArgs e)
         {
             Produto produtinho = new Produto();
       
@@ -65,6 +78,7 @@ namespace SIG_NF.View
             produtinho.PrecoUnitario.ToString("F2", CultureInfo.InvariantCulture);
             produtinho.Quant = Convert.ToInt32(txtQuant.Value);
             produtinho.Total = Convert.ToDouble(txtPreco.Value) * Convert.ToInt32(txtQuant.Value);
+            produtinho.Total.ToString("F2", CultureInfo.InvariantCulture);
 
             Total += Convert.ToDouble(txtPreco.Value) * Convert.ToInt32(txtQuant.Value);
        
@@ -77,6 +91,30 @@ namespace SIG_NF.View
             numero++;
         }
        
+        private void PreencherCampos(NotaFiscal nota)
+        {
+            txtCliente.Text = nota.NomeCliente;
+            txtRegiao.Text = nota.Regiao;
+            txtTotal.Value = Convert.ToDecimal(nota.TotalNota);
+            txtNF.Value = Convert.ToDecimal(nota.NumNF);
+
+            var pesquisa = controle.procurarVendedorCpf(nota.VendedorCPF);
+            txtVendedor.Text = pesquisa;
+
+            var novaListUsuario = nota.listaProdutos.Select(notinha => new
+            {
+                Item = notinha.Numero,
+                Descrição = notinha.Nome,
+                Qtd = notinha.Quant,
+                ValorUnitário = notinha.PrecoUnitario,
+                ValorItem = notinha.Total
+            }).ToList();
+
+            tabela.DataSource = novaListUsuario;
+            tabela.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            tabela.ColumnHeadersDefaultCellStyle.ForeColor = Color.Red;
+
+        }
         public void listar()
         {
             
