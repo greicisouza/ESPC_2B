@@ -132,7 +132,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEmail.Location = new System.Drawing.Point(327, 513);
             this.txtEmail.Name = "txtEmail";
@@ -259,7 +259,7 @@
             // txtRg
             // 
             this.txtRg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRg.Location = new System.Drawing.Point(327, 206);
+            this.txtRg.Location = new System.Drawing.Point(328, 206);
             this.txtRg.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -311,11 +311,11 @@
             // 
             // txtCpf
             // 
-            this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtCpf.Location = new System.Drawing.Point(660, 207);
             this.txtCpf.Mask = "###,###,###-##";
             this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(219, 26);
+            this.txtCpf.Size = new System.Drawing.Size(219, 27);
             this.txtCpf.TabIndex = 44;
             // 
             // txtCep

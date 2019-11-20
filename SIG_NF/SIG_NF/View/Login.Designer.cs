@@ -34,13 +34,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Entrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -107,6 +107,19 @@
             this.panel2.Size = new System.Drawing.Size(440, 573);
             this.panel2.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(104, 433);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(226, 36);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -171,18 +184,6 @@
             this.btn_Entrar.Text = "Entrar";
             this.btn_Entrar.UseVisualStyleBackColor = false;
             this.btn_Entrar.Click += new System.EventHandler(this.btn_Entrar_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(104, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 36);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // FormInicial
             // 

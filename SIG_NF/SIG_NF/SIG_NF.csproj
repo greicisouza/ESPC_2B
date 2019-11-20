@@ -89,12 +89,6 @@
     <Compile Include="View\ListarNotaFiscal.Designer.cs">
       <DependentUpon>ListarNotaFiscal.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\VisualizarNota.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\VisualizarNota.Designer.cs">
-      <DependentUpon>VisualizarNota.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="View\CadastroNotaFiscal.resx">
       <DependentUpon>CadastroNotaFiscal.cs</DependentUpon>
     </EmbeddedResource>

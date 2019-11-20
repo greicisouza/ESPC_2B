@@ -73,7 +73,7 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCliente.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtCliente.Location = new System.Drawing.Point(246, 116);
             this.txtCliente.Name = "txtCliente";
@@ -104,7 +104,7 @@
             // 
             // txtRegiao
             // 
-            this.txtRegiao.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline);
+            this.txtRegiao.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegiao.FormattingEnabled = true;
             this.txtRegiao.Items.AddRange(new object[] {
             "Norte",
@@ -142,7 +142,7 @@
             // 
             // txtNomeProduto
             // 
-            this.txtNomeProduto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeProduto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeProduto.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtNomeProduto.Location = new System.Drawing.Point(43, 217);
             this.txtNomeProduto.Name = "txtNomeProduto";
@@ -256,7 +256,7 @@
             // 
             // txtVendedor
             // 
-            this.txtVendedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline);
+            this.txtVendedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVendedor.FormattingEnabled = true;
             this.txtVendedor.Location = new System.Drawing.Point(43, 114);
             this.txtVendedor.Name = "txtVendedor";
@@ -310,7 +310,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.ForeColor = System.Drawing.Color.DarkCyan;
             this.label10.Location = new System.Drawing.Point(39, 157);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(210, 23);
